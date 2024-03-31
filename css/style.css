@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    perspective:700px;
+}
+.container{
+    width:90%;
+    margin:auto;
+}
+.container-title{
+    width:100%;
+    height:60px;
+    text-align:center;
+    box-shadow:10px 10px 10px 10px rgb(93, 181, 219);
+    border-radius:30px;
+    margin-top:40px;
+}
+.title{
+    text-transform:uppercase;
+    padding-top:15px;
+    font:italic 800 30px 'Times New Roman', Times, serif;
+    text-shadow:10px 10px 10px rgb(93, 181, 219);
+}
+.content1{
+    overflow:auto;
+    padding-bottom:20px; 
+}
+.container-content{
+    width:20%;
+    height:240px;
+    margin-left:4%;
+    margin-top:40px;
+    position:relative;
+    transform-style:preserve-3d;
+    transition:all 2s;
+    float:left;
+}
+.content-front,.content-back{
+    width:100%;
+    height:100%;
+    margin-left:4%;
+    border:1px solid rgb(93, 181, 219);
+    position:absolute;
+    box-shadow:5px 5px 3px 3px rgb(93, 181, 219);
+}
+.content-front{
+    background-size:cover;
+    z-index:1;
+    border-radius:20px 50px;
+    backface-visibility:hidden;
+}
+.content-front1{
+    background-image:url(../images/channel1.jpg); 
+}
+.content-front2{
+    background-image:url(../images/channel2.jpg); 
+}
+.content-front3{
+    background-image:url(../images/channel3.jpg); 
+}
+.content-front4{
+    background-image:url(../images/channel4.jpg); 
+}
+.content-front5{
+    background-image:url(../images/channel5.jpg); 
+}
+.content-front6{
+    background-image:url(../images/channel6.jpg); 
+}
+.content-front7{
+    background-image:url(../images/channel7.jpg); 
+}
+.content-front8{
+    background-image:url(../images/channel8.jpg); 
+}
+.content-front9{
+    background-image:url(../images/channel9.jpg); 
+}
+.content-front10{
+    background-image:url(../images/channel10.jpg); 
+}
+.content-front11{
+    background-image:url(../images/channel11.jpg); 
+}
+.content-front12{
+    background-image:url(../images/channel12.jpg); 
+}
+.content-back{
+   box-shadow:2px 5px 10px 20px rgb(93, 181, 219) inset;
+   text-align:center;
+   padding-top:30px;
+   border-radius:50px 20px;
+   transform:rotateY(180deg);
+}
+.content-back h2,.content-back p{
+    margin-top:10px;
+}
+.container-content:hover{
+    transform:rotateY(180deg);
+}
+
